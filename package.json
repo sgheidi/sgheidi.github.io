@@ -23,7 +23,7 @@
     "use-dark-mode": "^2.3.1"
   },
   "scripts": {
-    "name": "http://sgheidi.github.io",
+    "name": "sgheidi.github.io",
     "deploy": "gh-pages -d build -b master",
     "start": "react-scripts start",
     "build": "react-scripts build",
