@@ -1,8 +1,65 @@
+.img-white {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+.card {
+  margin-top: 170px;
+  margin-left: 50px;
+  width: 300px;
+  height: 150%;
+}
+
+.menu-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  width: 10px;
+  height: auto;
+  display: inline-block;
+}
+
+.link-divider {
+  width: 70px;
+  height: auto;
+  display: inline-block;
+}
+
+.divider2 {
+  width: 2px;
+  height: auto;
+  display: inline-block;
+}
+
+.divider3 {
+  width: 13px;
+  height: auto;
+  display: inline-block;
+}
+
+.divider4 {
+  width: 20px;
+  height: auto;
+  display: inline-block;
+}
+
+.links {
+  margin-top: 65px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  background-color: #75736e;
+  padding: 20px;
+}
+
 .dark-mode-button {
-  display: block;
   margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  margin-right: 45px;
 }
 
 .name {
@@ -19,17 +76,25 @@ body {
 }
 
 body.light-mode {
-  background-color: #fff;
+  background-color: #f2f0eb;
   color: #333;
   transition: background-color 0.3s ease;
+  .links {
+    background-color: #e8e6e1;
+  }
 }
 
 body.dark-mode {
-  background-color: #10171d;
+  background-color: #151e26;
   color: #dfdfdf;
+  transition: background-color 0.3s ease;
 
   .navbar {
     background-color: #1b2938;
+  }
+
+  .links {
+    background-color: #17302e;
   }
 
   .dark-mode-toggle > button {
@@ -45,7 +110,7 @@ body.dark-mode {
   top: 0;
   width: 100%;
   display: flex;
-  background-color: #95d3ff;
+  background-color: #73aad1;
   padding: 20px;
 }
 
