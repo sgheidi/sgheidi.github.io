@@ -3,22 +3,18 @@ import useDarkMode from 'use-dark-mode';
 import linkedin_light from './linkedin_light.png';
 import github_light from './github_light.png';
 
-import github_dark from './github_light.png';
-import linkedin_dark from './linkedin_light.png';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function ShowDarkLogos() {
   return (
     <>
       <a href="https://www.linkedin.com/in/shervan-gheidi/">
-        <div className="img-white">
-        <img src={linkedin_dark} alt="LinkedIn" width="25" />
-        </div>
+      <LinkedInIcon color="secondary" style={{ fontSize: 27 }}/>
       </a>
-      <div class="divider4"/>
+      <div class="linkedin-divider"/>
       <a href="https://www.github.com/sgheidi">
-      <div className="img-white">
-        <img src={github_dark} alt="GitHub" width="24" />
-        </div>
+        <GitHubIcon color="secondary" style={{ fontSize: 23 }}/>
       </a>
       <div class="divider3"/>
     </>
@@ -29,11 +25,11 @@ function ShowLightLogos() {
   return (
     <>
     <a href="https://www.linkedin.com/in/shervan-gheidi/">
-      <img src={linkedin_light} alt="LinkedIn" width="25" />
+    <LinkedInIcon color="action" style={{ fontSize: 27 }}/>
     </a>
-    <div class="divider4"/>
+    <div class="linkedin-divider"/>
     <a href="https://www.github.com/sgheidi">
-      <img src={github_light} alt="GitHub" width="24" />
+      <GitHubIcon color="action" style={{ fontSize: 23 }}/>
     </a>
     <div class="divider3"/>
     </>

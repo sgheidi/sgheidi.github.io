@@ -45,9 +45,7 @@ export default function App() {
           </Button>
         </div>
       </div>
-      <div className="card">
-        <Card />
-      </div>
+
     </>
   );
 }
