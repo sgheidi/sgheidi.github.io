@@ -6,17 +6,29 @@ import github_light from './github_light.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+const linkedin_icon_size = 28;
+const github_icon_size = 23;
+
+const gitIcon = {
+  fontSize: github_icon_size,
+  marginTop: "3"
+};
+const linkedIcon = {
+  fontSize: linkedin_icon_size,
+  marginTop: "3"
+};
+
+
 function ShowDarkLogos() {
   return (
     <>
       <a href="https://www.linkedin.com/in/shervan-gheidi/">
-      <LinkedInIcon color="secondary" style={{ fontSize: 27 }}/>
+      <LinkedInIcon color="secondary" style={linkedIcon}/>
+      &nbsp;&nbsp;&nbsp;
       </a>
-      <div class="linkedin-divider"/>
       <a href="https://www.github.com/sgheidi">
-        <GitHubIcon color="secondary" style={{ fontSize: 23 }}/>
+        <GitHubIcon color="secondary" style={gitIcon}/>
       </a>
-      <div class="divider3"/>
     </>
   );
 }
@@ -25,13 +37,12 @@ function ShowLightLogos() {
   return (
     <>
     <a href="https://www.linkedin.com/in/shervan-gheidi/">
-    <LinkedInIcon color="action" style={{ fontSize: 27 }}/>
+    <LinkedInIcon color="action" style={linkedIcon}/>
+    &nbsp;&nbsp;
     </a>
-    <div class="linkedin-divider"/>
     <a href="https://www.github.com/sgheidi">
-      <GitHubIcon color="action" style={{ fontSize: 23 }}/>
+      <GitHubIcon color="action" style={gitIcon}/>
     </a>
-    <div class="divider3"/>
     </>
   );
 }

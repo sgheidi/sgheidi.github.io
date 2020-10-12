@@ -11,12 +11,13 @@ const DarkModeToggle = () => {
   return (
     <div className="dark-mode-toggle">
       <SocialMedia />
+      &nbsp;&nbsp;
       <button type="button" onClick={darkMode.disable}>
-        <WbSunnyIcon />
+        <WbSunnyIcon/>
+        &nbsp;
       </button>
-      <div class="divider2"/>
       <button type="button" onClick={darkMode.enable}>
-        <NightsStayIcon />
+        <NightsStayIcon />&nbsp;
       </button>
     </div>
   );

@@ -12,14 +12,14 @@ import useDarkMode from 'use-dark-mode';
 
 const useStyles = makeStyles({
   root_black: {
-    maxWidth: 300,
+    maxWidth: 400,
     background: '#caded4',
     boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .3)',
     color: 'black',
   },
   root_white: {
-    maxWidth: 300,
-    background: '#3e4240',
+    maxWidth: 400,
+    background: '#112d4d',
     boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .3)',
     color: 'white',
   },
@@ -43,11 +43,10 @@ export default function ImgMediaCard() {
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            <b>chess-ai</b>
           </Typography>
-          <Typography variant="body2" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="body1" component="p" align="alignJustify" onClick={console.log("Hi")}>
+            A generalized minimax and alpha-beta pruning search algorithm for perfect, 2-player games.
           </Typography>
         </CardContent>
       </CardActionArea>

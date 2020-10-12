@@ -16,3 +16,5 @@ Board.undo()
 ...
 Cards with blog posts (snippets) in main content
 Links to github, linkedin beside light/dark mode
+
+Commenting, upvoting on blog posts. Connect to Firebase or MongoDB.
