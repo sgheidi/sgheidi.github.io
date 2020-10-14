@@ -1,50 +1,123 @@
-import React, { Component } from 'react';
+import React from 'react';
 import useDarkMode from 'use-dark-mode';
-import linkedin_light from './linkedin_light.png';
-import github_light from './github_light.png';
-
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { useMediaQuery } from 'react-responsive';
+import { Link } from '@material-ui/core';
 
-const linkedin_icon_size = 28;
-const github_icon_size = 23;
-
-const gitIcon = {
-  fontSize: github_icon_size,
-  marginTop: "3"
+const link_icon = {
+  fontSize: "28",
+  marginTop: "4"
 };
-const linkedIcon = {
-  fontSize: linkedin_icon_size,
-  marginTop: "3"
+const git_icon = {
+  fontSize: "23",
+  marginTop: "4"
 };
-
+const link_icon_small = {
+  fontSize: "25",
+  marginTop: "4"
+};
+const git_icon_small = {
+  fontSize: "20",
+  marginTop: "4"
+};
+const link_icon_small2 = {
+  fontSize: "21",
+  marginTop: "4"
+};
+const git_icon_small2 = {
+  fontSize: "16",
+  marginTop: "4"
+};
 
 function ShowDarkLogos() {
-  return (
-    <>
-      <a href="https://www.linkedin.com/in/shervan-gheidi/">
-      <LinkedInIcon color="secondary" style={linkedIcon}/>
-      &nbsp;&nbsp;&nbsp;
-      </a>
-      <a href="https://www.github.com/sgheidi">
-        <GitHubIcon color="secondary" style={gitIcon}/>
-      </a>
-    </>
-  );
+  const sz430 = useMediaQuery({
+      query: '(max-device-width: 430px)'
+    });
+  const sz365 = useMediaQuery({
+      query: '(max-device-width: 365px)'
+    });
+  if (sz365) {
+    return (
+      <>
+        <a href="https://www.linkedin.com/in/shervan-gheidi/">
+          <LinkedInIcon color="secondary" style={link_icon_small2}/> &nbsp;&nbsp;
+        </a>
+        <a href="https://www.github.com/sgheidi">
+          <GitHubIcon color="secondary" style={git_icon_small2}/>
+        </a>
+      </>
+    );
+  }
+  else if (sz430) {
+    return (
+      <>
+        <a href="https://www.linkedin.com/in/shervan-gheidi/">
+          <LinkedInIcon color="secondary" style={link_icon_small}/> &nbsp;&nbsp;
+        </a>
+        <a href="https://www.github.com/sgheidi">
+          <GitHubIcon color="secondary" style={git_icon_small}/>
+        </a>
+      </>
+    );
+  }
+  else {
+    return (
+      <>
+        <Link href="https://www.linkedin.com/in/shervan-gheidi/">
+          <LinkedInIcon color="secondary" style={link_icon}/> &nbsp;&nbsp;
+        </Link>
+        <a href="https://www.github.com/sgheidi">
+          <GitHubIcon color="secondary" style={git_icon}/>
+        </a>
+      </>
+    );
+  }
 }
 
 function ShowLightLogos() {
-  return (
-    <>
-    <a href="https://www.linkedin.com/in/shervan-gheidi/">
-    <LinkedInIcon color="action" style={linkedIcon}/>
-    &nbsp;&nbsp;
-    </a>
-    <a href="https://www.github.com/sgheidi">
-      <GitHubIcon color="action" style={gitIcon}/>
-    </a>
-    </>
-  );
+  const sz430 = useMediaQuery({
+      query: '(max-device-width: 430px)'
+    });
+  const sz365 = useMediaQuery({
+      query: '(max-device-width: 365px)'
+    });
+  if (sz365) {
+    return (
+      <>
+        <a href="https://www.linkedin.com/in/shervan-gheidi/">
+          <LinkedInIcon color="action" style={link_icon_small2}/> &nbsp;&nbsp;
+        </a>
+        <a href="https://www.github.com/sgheidi">
+          <GitHubIcon color="action" style={git_icon_small2}/>
+        </a>
+      </>
+    );
+  }
+  else if (sz430) {
+    return (
+      <>
+        <a href="https://www.linkedin.com/in/shervan-gheidi/">
+          <LinkedInIcon color="action" style={link_icon_small}/> &nbsp;&nbsp;
+        </a>
+        <a href="https://www.github.com/sgheidi">
+          <GitHubIcon color="action" style={git_icon_small}/>
+        </a>
+      </>
+    );
+  }
+  else {
+    return (
+      <>
+        <a href="https://www.linkedin.com/in/shervan-gheidi/">
+          <LinkedInIcon color="action" style={link_icon}/> &nbsp;&nbsp;
+        </a>
+        <a href="https://www.github.com/sgheidi">
+          <GitHubIcon color="action" style={git_icon}/>
+        </a>
+      </>
+    );
+  }
 }
 
 export default function SocialMedia() {

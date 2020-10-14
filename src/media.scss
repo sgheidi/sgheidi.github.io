@@ -1,21 +1,40 @@
 // Media queries for different devices.
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 430px) and (max-width: 600px) {
   .name {
-    font-size: 19px !important;
+    font-size: 22px !important;
   }
   .navbar {
     padding: 10px !important;
   }
-  .links {
+  .bottom-nav {
     margin-top: 54px !important;
-    height: 14% !important;
+    height: 70px !important;
   }
 }
 
-@media only screen and (max-width: 600px) and (min-height: 800px) {
-  .links {
+@media only screen and (min-width: 365px) and (max-width: 430px) {
+  .name {
+    font-size: 18px !important;
+  }
+  .navbar {
+    padding: 10px !important;
+  }
+  .bottom-nav {
     margin-top: 54px !important;
-    height: 8% !important;
+    height: 70px !important;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .name {
+    font-size: 14px !important;
+  }
+  .navbar {
+    padding: 2px !important;
+  }
+  .bottom-nav {
+    margin-top: 38px !important;
+    height: 60px !important;
   }
 }
