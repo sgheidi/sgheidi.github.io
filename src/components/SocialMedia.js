@@ -6,116 +6,116 @@ import { useMediaQuery } from 'react-responsive';
 import { Link } from '@material-ui/core';
 
 const link_icon = {
-  fontSize: "28",
-  marginTop: "4"
+  fontSize: "5.5vw",
+
 };
 const git_icon = {
-  fontSize: "23",
-  marginTop: "4"
+  fontSize: "4.5vw",
+
 };
-const link_icon_small = {
-  fontSize: "25",
-  marginTop: "4"
+
+const git_992 = {
+  fontSize: "22",
 };
-const git_icon_small = {
-  fontSize: "20",
-  marginTop: "4"
+
+const link_992 = {
+  fontSize: "27",
 };
-const link_icon_small2 = {
-  fontSize: "21",
-  marginTop: "4"
+
+const git_688_992 = {
+  fontSize: "4vw",
 };
-const git_icon_small2 = {
-  fontSize: "16",
-  marginTop: "4"
+
+const link_688_992 = {
+  fontSize: "4.9vw",
 };
 
 function ShowDarkLogos() {
-  const sz430 = useMediaQuery({
-      query: '(max-device-width: 430px)'
-    });
-  const sz365 = useMediaQuery({
-      query: '(max-device-width: 365px)'
-    });
-  if (sz365) {
+  const bp992 = useMediaQuery({
+      query: '(min-device-width: 992px)'
+  });
+  const bp688_992 = useMediaQuery({
+      query: '(min-device-width: 688px) and (max-device-width: 992px)'
+  });
+  if (bp992) {
     return (
       <>
         <a href="https://www.linkedin.com/in/shervan-gheidi/">
-          <LinkedInIcon color="secondary" style={link_icon_small2}/> &nbsp;&nbsp;
+          <LinkedInIcon color="secondary" style={link_992}/>
         </a>
         <a href="https://www.github.com/sgheidi">
-          <GitHubIcon color="secondary" style={git_icon_small2}/>
+          <GitHubIcon color="secondary" style={git_992}/>
         </a>
       </>
     );
   }
-  else if (sz430) {
+  else if (bp688_992) {
     return (
       <>
         <a href="https://www.linkedin.com/in/shervan-gheidi/">
-          <LinkedInIcon color="secondary" style={link_icon_small}/> &nbsp;&nbsp;
+          <LinkedInIcon color="secondary" style={link_688_992}/>
         </a>
         <a href="https://www.github.com/sgheidi">
-          <GitHubIcon color="secondary" style={git_icon_small}/>
+          <GitHubIcon color="secondary" style={git_688_992}/>
         </a>
       </>
     );
   }
   else {
     return (
-      <>
-        <Link href="https://www.linkedin.com/in/shervan-gheidi/">
-          <LinkedInIcon color="secondary" style={link_icon}/> &nbsp;&nbsp;
-        </Link>
-        <a href="https://www.github.com/sgheidi">
-          <GitHubIcon color="secondary" style={git_icon}/>
-        </a>
-      </>
+        <>
+          <a href="https://www.linkedin.com/in/shervan-gheidi/">
+            <LinkedInIcon color="secondary" style={link_icon}/>
+          </a>
+          <a href="https://www.github.com/sgheidi">
+            <GitHubIcon color="secondary" style={git_icon}/>
+          </a>
+        </>
     );
   }
 }
 
 function ShowLightLogos() {
-  const sz430 = useMediaQuery({
-      query: '(max-device-width: 430px)'
-    });
-  const sz365 = useMediaQuery({
-      query: '(max-device-width: 365px)'
-    });
-  if (sz365) {
+  const bp992 = useMediaQuery({
+      query: '(min-device-width: 992px)'
+  });
+  const bp688_992 = useMediaQuery({
+      query: '(min-device-width: 688px) and (max-device-width: 992px)'
+  });
+  if (bp992) {
     return (
       <>
         <a href="https://www.linkedin.com/in/shervan-gheidi/">
-          <LinkedInIcon color="action" style={link_icon_small2}/> &nbsp;&nbsp;
+          <LinkedInIcon color="action" style={link_992}/>
         </a>
         <a href="https://www.github.com/sgheidi">
-          <GitHubIcon color="action" style={git_icon_small2}/>
+          <GitHubIcon color="action" style={git_992}/>
         </a>
       </>
     );
   }
-  else if (sz430) {
+  else if (bp688_992) {
     return (
       <>
         <a href="https://www.linkedin.com/in/shervan-gheidi/">
-          <LinkedInIcon color="action" style={link_icon_small}/> &nbsp;&nbsp;
+          <LinkedInIcon color="action" style={link_688_992}/>
         </a>
         <a href="https://www.github.com/sgheidi">
-          <GitHubIcon color="action" style={git_icon_small}/>
+          <GitHubIcon color="action" style={git_688_992}/>
         </a>
       </>
     );
   }
   else {
     return (
-      <>
-        <a href="https://www.linkedin.com/in/shervan-gheidi/">
-          <LinkedInIcon color="action" style={link_icon}/> &nbsp;&nbsp;
-        </a>
-        <a href="https://www.github.com/sgheidi">
-          <GitHubIcon color="action" style={git_icon}/>
-        </a>
-      </>
+        <>
+          <a href="https://www.linkedin.com/in/shervan-gheidi/">
+            <LinkedInIcon color="action" style={link_icon}/>
+          </a>
+          <a href="https://www.github.com/sgheidi">
+            <GitHubIcon color="action" style={git_icon}/>
+          </a>
+        </>
     );
   }
 }

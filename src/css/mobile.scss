@@ -1,0 +1,89 @@
+@media only screen and (max-width: 688px) {
+  .navbar {
+    background-color: #73aad1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .bottom-nav {
+    height: 13vw;
+    background-color: #75736e;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    vertical-align:middle;
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .name {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    min-width: 60px;
+    font-size: 4.7vw;
+    margin-left: 7px;
+    margin-bottom: 0px;
+  }
+
+  .dark-mode-toggle {
+    float: right;
+    min-width: 60px;
+    margin-bottom: 0px;
+    & > button {
+      padding: 10px;
+      background: none;
+      border: none;
+      color: #ffe600;
+      cursor: pointer;
+      transition: color 0.5s ease;
+      &:last-child {
+        color: #666;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    & > a {
+      padding: 10px;
+    }
+  }
+
+  .bottom-nav-divider {
+    margin: 2vw;
+  }
+
+  body.light-mode {
+    background-color: #f2f0eb;
+    color: #333;
+    transition: background-color 0.5s ease;
+    .bottom-nav {
+      background-color: #e8e6e1;
+    }
+  }
+
+  body.dark-mode {
+    background-color: #242925;
+    color: #dfdfdf;
+    transition: background-color 0.5s ease;
+    .navbar {
+      background-color: #1b2938;
+    }
+
+    .bottom-nav {
+      background-color: #17302e;
+    }
+
+    .dark-mode-toggle > button {
+      color: #999;
+      &:last-child {
+        color: lightblue;
+      }
+    }
+  }
+}

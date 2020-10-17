@@ -5,54 +5,55 @@ import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
 import { useMediaQuery } from 'react-responsive'
 
-const sun_small = {
-  fontSize: "25"
+const sun = {
+  fontSize: "5.5vw",
+};
+const moon = {
+  fontSize: "5.5vw",
+};
+const sun_688 = {
+  fontSize: "7vw",
+};
+const moon_688 = {
+  fontSize: "7vw",
+};
+const sun_688_992 = {
+  fontSize: "4.5vw",
+};
+const moon_688_992 = {
+  fontSize: "4.5vw",
 };
 
-const moon_small = {
-  fontSize: "25"
-};
-
-const sun_small2 = {
-  fontSize: "19"
-};
-
-const moon_small2 = {
-  fontSize: "19"
-};
-
-const DarkModeToggle = () => {
+export default function DarkModeToggle() {
+  const bp992 = useMediaQuery({
+      query: '(min-device-width: 992px)'
+  });
+  const bp688_992 = useMediaQuery({
+      query: '(min-device-width: 688px) and (max-device-width: 992px)'
+  });
   const darkMode = useDarkMode(false);
-  const sz430 = useMediaQuery({
-      query: '(max-device-width: 430px)'
-  });
-  const sz365 = useMediaQuery({
-      query: '(max-device-width: 365px)'
-  });
-  if (sz365) {
+  if (bp992) {
     return (
       <div className="dark-mode-toggle">
         <SocialMedia />
-        &nbsp;&nbsp;
         <button type="button" onClick={darkMode.disable}>
-          <WbSunnyIcon style={sun_small2}/>
+          <WbSunnyIcon />
         </button>
         <button type="button" onClick={darkMode.enable}>
-          <NightsStayIcon style={moon_small2}/>&nbsp;
+          <NightsStayIcon />
         </button>
       </div>
     );
   }
-  else if (sz430) {
+  else if (bp688_992) {
     return (
       <div className="dark-mode-toggle">
         <SocialMedia />
-        &nbsp;&nbsp;
         <button type="button" onClick={darkMode.disable}>
-          <WbSunnyIcon style={sun_small}/> &nbsp;
+          <WbSunnyIcon style={sun_688_992} />
         </button>
         <button type="button" onClick={darkMode.enable}>
-          <NightsStayIcon style={moon_small}/>&nbsp;
+          <NightsStayIcon style={moon_688_992} />
         </button>
       </div>
     );
@@ -61,16 +62,13 @@ const DarkModeToggle = () => {
     return (
       <div className="dark-mode-toggle">
         <SocialMedia />
-        &nbsp;&nbsp;
         <button type="button" onClick={darkMode.disable}>
-          <WbSunnyIcon/> &nbsp;
+          <WbSunnyIcon style={sun} />
         </button>
         <button type="button" onClick={darkMode.enable}>
-          <NightsStayIcon />&nbsp;
+          <NightsStayIcon style={moon} />
         </button>
       </div>
     );
   }
-};
-
-export default DarkModeToggle;
+}

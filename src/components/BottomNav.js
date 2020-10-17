@@ -9,91 +9,95 @@ const useStyles = makeStyles({
   button_white: {
     color: 'white',
     boxShadow: '0 3px 5px 2px rgba(90, 90, 90, .3)',
-    textTransform: 'none'
+    textTransform: 'none',
+    borderRadius: '25px',
+    width: '25vw',
+    height: '8vw',
+    fontSize: '3vw',
+    "&:hover": {
+      background: "#184033",
+      color: "white",
+    },
   },
   button_black: {
     color: 'black',
     boxShadow: '0 3px 5px 2px rgba(90, 90, 90, .3)',
-    textTransform: 'none'
+    textTransform: 'none',
+    borderRadius: '25px',
+    width: '25vw',
+    height: '8vw',
+    fontSize: '3vw',
+    "&:hover": {
+      background: "#d5e3de",
+      color: "black",
+      boxShadow: '0 4px 4px 4px rgba(45, 45, 45, .3)'
+    },
   },
 });
 
-const styles430 = {
-  width: '100px',
-  height: '35px',
-  fontSize: '12px'
-};
-const styles365 = {
-  width: '90px',
-  height: '30px',
-  fontSize: '9px'
+const mid_button = {
+  width: '30vw',
+  height: '8vw',
+  fontSize: '3vw'
 };
 
-function openPdf() {
-  return (<embed src={Resume} width="100%" height="100%" />);
-}
+const button_style_688_992 = {
+  width: '20vw',
+  height: '8vw',
+  fontSize: '2.5vw'
+};
+const mid_button_688_992 = {
+  width: '25vw',
+  height: '8vw',
+  fontSize: '2.5vw'
+};
+
+const button_style_992 = {
+  width: '150px',
+  height: '35px',
+  fontSize: '15px'
+};
 
 export default function BottomNav() {
-  const sz365 = useMediaQuery({
-      query: '(max-device-width: 365px)'
-  });
-  const sz600 = useMediaQuery({
-      query: '(max-device-width: 600px)'
-  });
-  const sz430 = useMediaQuery({
-      query: '(max-device-width: 430px)'
-  });
   const darkMode = useDarkMode(false);
   const classes = useStyles();
-  if (sz365) {
+  const bp992 = useMediaQuery({
+      query: '(min-device-width: 992px)'
+  });
+  const bp688_992 = useMediaQuery({
+      query: '(min-device-width: 688px) and (max-device-width: 992px)'
+  });
+  if (bp992) {
     return (
       <div className="bottom-nav">
-        <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} onClick={() => { openPdf(); }} style={styles365}>
+        <Button href={Resume} variant="outlined" className={(darkMode.value == true) ? classes.button_white :
+        classes.button_black} style={button_style_992}>
         CV 💼
-        </Button>
+        </Button> <div className="bottom-nav-divider"/>
         <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} style={styles365}>
+        classes.button_black} style={button_style_992}>
           Projects 📝
-        </Button>
+        </Button> <div className="bottom-nav-divider"/>
         <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} style={styles365}>
+        classes.button_black} style={button_style_992}>
           Blog 💻
         </Button>
       </div>
     );
   }
-  else if (sz430) {
+  else if (bp688_992) {
     return (
       <div className="bottom-nav">
-        <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} onClick={() => { openPdf(); }} style={styles430}>
+        <Button href={Resume} variant="outlined" className={(darkMode.value == true) ? classes.button_white :
+        classes.button_black} style={button_style_688_992}>
         CV 💼
         </Button> <div className="bottom-nav-divider"/>
         <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} style={styles430}>
+        classes.button_black} style={mid_button_688_992}>
           Projects 📝
         </Button> <div className="bottom-nav-divider"/>
         <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} style={styles430}>
-          Blog 💻
-        </Button>
-      </div>
-    );
-  }
-  else if (sz600) {
-    return (
-      <div className="bottom-nav">
-        <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} onClick={() => { openPdf(); }} size="small">
-        CV 💼
-        </Button> <div className="bottom-nav-divider"/>
-        <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} size="small">
-          Projects 📝
-        </Button> <div className="bottom-nav-divider"/>
-        <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} size="small">
+        classes.button_black} style={button_style_688_992}>
           Blog 💻
         </Button>
       </div>
@@ -102,12 +106,12 @@ export default function BottomNav() {
   else {
     return (
       <div className="bottom-nav">
-        <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black} onClick={() => { openPdf(); }}>
+        <Button href={Resume} variant="outlined" className={(darkMode.value == true) ? classes.button_white :
+        classes.button_black}>
         CV 💼
         </Button> <div className="bottom-nav-divider"/>
         <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
-        classes.button_black}>
+        classes.button_black} style={mid_button}>
           Projects 📝
         </Button> <div className="bottom-nav-divider"/>
         <Button variant="outlined" className={(darkMode.value == true) ? classes.button_white :
