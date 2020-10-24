@@ -1,4 +1,9 @@
+.dropdown-item {
+  border-radius:25px;
+}
+
 .navbar {
+  position: sticky;
   background-color: #73aad1;
   list-style-type: none;
   margin: 0;
@@ -10,6 +15,7 @@
 }
 
 .bottom-nav {
+  position: sticky;
   height: 12vw;
   background-color: #75736e;
   width: 100%;
@@ -18,6 +24,14 @@
   vertical-align:middle;
   display: flex;
   transition: background-color 0.5s ease;
+  .dropdown-dark {
+    border-radius:25px;
+    background-color: #2b3545;
+  }
+  .dropdown-light {
+    border-radius:25px;
+    background-color: #e3e1ed;
+  }
 }
 
 .name {
@@ -61,32 +75,7 @@
   margin: 2vw;
 }
 
-body.light-mode {
-  background-color: #f2f0eb;
-  color: #333;
-  transition: background-color 0.5s ease;
-  .bottom-nav {
-    background-color: #e8e6e1;
-  }
-}
-
-body.dark-mode {
-  background-color: #242925;
-  color: #dfdfdf;
-  transition: background-color 0.5s ease;
-  .navbar {
-    background-color: #1b2938;
-  }
-
-  .bottom-nav {
-    background-color: #17302e;
-    transition: background-color 0.5s ease;
-  }
-
-  .dark-mode-toggle > button {
-    color: #999;
-    &:last-child {
-      color: lightblue;
-    }
-  }
+.blog-body-cards {
+  padding: 3vw 3vw;
+  display: flex;
 }

@@ -3,7 +3,9 @@ import useDarkMode from 'use-dark-mode';
 import SocialMedia from './SocialMedia';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const sun = {
   fontSize: "5.5vw",
@@ -18,11 +20,34 @@ const moon_688 = {
   fontSize: "7vw",
 };
 const sun_688_992 = {
-  fontSize: "4.5vw",
+  fontSize: "4vw",
 };
 const moon_688_992 = {
-  fontSize: "4.5vw",
+  fontSize: "4vw",
 };
+
+const DarkToolTip = withStyles((theme) => ({
+  tooltip: {
+    backgroundColor: "#2e0718",
+    color: "white",
+    boxShadow: theme.shadows[1],
+    fontSize: 13,
+    marginBottom: "10px",
+  },
+  tooltipPlacementBottom: {
+    margin: "0px 0px",
+  },
+}))(Tooltip);
+
+const LightTooltip = withStyles((theme) => ({
+  tooltip: {
+    backgroundColor: "white",
+    color: "black",
+    boxShadow: theme.shadows[1],
+    fontSize: 13,
+    marginBottom: "10px",
+  },
+}))(Tooltip);
 
 export default function DarkModeToggle() {
   const bp992 = useMediaQuery({
@@ -33,15 +58,20 @@ export default function DarkModeToggle() {
   });
   const darkMode = useDarkMode(false);
   if (bp992) {
+    var Component = darkMode.value ? DarkToolTip : LightTooltip;
     return (
       <div className="dark-mode-toggle">
         <SocialMedia />
-        <button type="button" onClick={darkMode.disable}>
-          <WbSunnyIcon />
-        </button>
-        <button type="button" onClick={darkMode.enable}>
-          <NightsStayIcon />
-        </button>
+        <Component title="Toggle light theme">
+          <button type="button" onClick={darkMode.disable}>
+            <WbSunnyIcon />
+          </button>
+        </Component>
+        <Component title="Toggle dark theme">
+          <button type="button" onClick={darkMode.enable}>
+            <NightsStayIcon />
+          </button>
+        </Component>
       </div>
     );
   }

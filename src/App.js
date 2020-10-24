@@ -1,34 +1,31 @@
 import React from 'react';
+import Blog1 from './components/Blog1';
+import Pychess from './components/Pychess';
 import DarkModeToggle from './components/DarkModeToggle';
-import Card from './components/Card';
-import BottomNav from './components/BottomNav';
-import useDarkMode from 'use-dark-mode';
-import './css/styles.scss';
-import './css/mobile.scss';
-import './css/tablet.scss';
-import './css/smallscreen.scss';
-import './css/bigscreen.scss';
-
-const darkstyle = {
-  color: "white",
-  textDecoration: "none"
-};
-const lightstyle = {
-  color: "black",
-  textDecoration: "none"
-};
+import Main from './Main';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 export default function App() {
-  const darkMode = useDarkMode(false);
   return (
     <>
-      <div className="navbar">
-        <div className="name">
-          <a href="/" style={darkMode.value ? darkstyle : lightstyle}><b>shervan gheidi ☕ </b></a>
+      <Router>
+        <div className="navbar">
+          <div className="name">
+            <Link to="/"><b>shervan gheidi ☕ </b></Link>
+          </div>
+          <DarkModeToggle />
         </div>
-        <DarkModeToggle />
-      </div>
-      <BottomNav />
+        <Switch>
+          <Route path="/blog" exact component={Blog1} />
+          <Route path="/pychess" exact component={Pychess} />
+          <Route path="/" exact component={Main} />
+        </Switch>
+      </Router>
     </>
   );
 }

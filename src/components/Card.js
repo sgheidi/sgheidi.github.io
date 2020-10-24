@@ -15,12 +15,14 @@ const useStyles = makeStyles({
     background: '#caded4',
     boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .3)',
     color: 'black',
+    fontSize: '16px',
   },
   root_white: {
     maxWidth: 400,
     background: '#112d4d',
     boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .3)',
     color: 'white',
+    fontSize: '16px',
   },
   button_black: {
     padding: "10px 10px",
@@ -44,7 +46,7 @@ export default function ImgMediaCard() {
           <Typography gutterBottom variant="h5" component="h2">
             <b>chess-ai</b>
           </Typography>
-          <Typography variant="body1" component="p" align="alignJustify" onClick={console.log("Hi")}>
+          <Typography variant="body" component="p" align="alignJustify">
             A generalized minimax and alpha-beta pruning search algorithm for perfect, 2-player games.
           </Typography>
         </CardContent>
