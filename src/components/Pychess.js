@@ -41,11 +41,12 @@ export default function Pychess() {
           evaluation function</a> so that
           it makes better decisions on the moves it makes.
           <br /><br />
+          <div className="image-background">
           <img
           src={gif}
-          alt="2 chess AI's playing against each other"
-          />
-          <p className="caption"><i>  Watch my 2 AI's play against each other! </i></p>
+          alt="Chess AI playing against itself"
+          /> </div>
+          <p className="caption"><i>  Watch my AI play against itself! </i></p>
           The coolest thing about the AI is that it can constantly be updated with new code, anytime
           I want it to, or with
           any new idea I come up with

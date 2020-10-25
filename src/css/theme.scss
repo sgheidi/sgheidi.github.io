@@ -25,13 +25,8 @@ body.light-mode {
       border-radius: 25px;
       transition: box-shadow 0.2s ease-in-out;
     }
-    .date {
-    }
-    * {
-    }
-    .project-body-text {
-    }
-    .github-tag {
+    .image-background {
+      background-color: #c7e2f2;
     }
   }
   .navbar {
@@ -48,15 +43,17 @@ body.light-mode {
     text-decoration: none;
     transition: color 0.5s ease;
   }
-  .name:hover {
-      font-size: 25px;
-      color: black;
-      box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
-      -moz-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
-      -webkit-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
-      -o-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
-      border-radius:25px;
-      transition: box-shadow 0.1s;
+  @media only screen and (min-width: 992px) and (max-width: 1312px) {
+    .name:hover {
+        font-size: 27px;
+        color: black;
+        box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
+        -moz-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
+        -webkit-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
+        -o-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
+        border-radius:25px;
+        transition: box-shadow 0.1s;
+    }
   }
 }
 
@@ -78,7 +75,6 @@ body.dark-mode {
     -webkit-box-shadow: 0 4px 4px 4px rgba(90, 90, 90, .3);
     -o-box-shadow: 0 4px 4px 4px rgba(90, 90, 90, .3);
     border-radius: 25px;
-    transition: box-shadow 0.2s ease-in-out;
     .caption {
     }
     a {
@@ -104,15 +100,17 @@ body.dark-mode {
     text-decoration: none;
     transition: color 0.5s ease;
   }
-  .name:hover {
-    font-size: 25px;
-    color: black;
-    box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
-    -moz-box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
-    -webkit-box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
-    -o-box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
-    border-radius:25px;
-    transition: font-size 0.1s;
+  @media only screen and (min-width: 992px) and (max-width: 1312px) {
+    .name:hover {
+      font-size: 27px;
+      color: black;
+      box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
+      -moz-box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
+      -webkit-box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
+      -o-box-shadow: 0 4px 4px 4px rgba(200, 0, 0, .3);
+      border-radius:25px;
+      transition: font-size 0.1s;
+    }
   }
   .bottom-nav {
     background-color: #17302e;

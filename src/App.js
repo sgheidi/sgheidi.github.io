@@ -4,7 +4,7 @@ import Pychess from './components/Pychess';
 import DarkModeToggle from './components/DarkModeToggle';
 import Main from './Main';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -16,7 +16,7 @@ export default function App() {
       <Router>
         <div className="navbar">
           <div className="name">
-            <Link to="/"><b>shervan gheidi ☕ </b></Link>
+            <a href="/"><b>shervan gheidi ☕ </b></a>
           </div>
           <DarkModeToggle />
         </div>
