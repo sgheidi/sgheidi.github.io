@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import DarkModeToggle from './DarkModeToggle';
+import DarkModeToggle from '../DarkModeToggle';
 import useDarkMode from 'use-dark-mode';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import Typography from '@material-ui/core/Typography';
-import gif from '../media/out.gif'
-import '../css/projects.scss';
+import gif from '../../media/out.gif'
+import '../../css/projects.scss';
 
 export default function Pychess() {
   return (
@@ -53,7 +53,7 @@ export default function Pychess() {
           . I wrote every line in this codebase and can apply any new
           concept or idea and see the difference immediately.
           <br /> <br />
-          Some of the greatest lessons I learned along the way are: good code organization
+          Some lessons I learned along the way are: good code organization
           practices, Python PEP-8
           style docstrings (for classes and functions), and applying OOP in a real project.
 
@@ -63,6 +63,13 @@ export default function Pychess() {
           However, for a project with a large codebase like this, applying OOP concepts
           <b> signficantly </b> increased code
           organization which in turn lead to a much more understandable and less bug-prone codebase.
+          <br /> <br />
+          Perhaps the greatest lesson I learned from this project is the process of building and
+          designing a relatively large system from the ground up. When building something like this,
+          one is faced with many design decisions such as the program's flow of logic, which
+          functions to encapsulate into classes and keeping the code as least bug-prone as possible.
+          I designed the codebase so that it is as organized and encapsulated as it can be, and made
+          the program flow of logic as simple as possible, for the long term.
           </p>
       </div>
     </>

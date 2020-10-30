@@ -2,7 +2,14 @@ body.light-mode {
   background-color: #f2f0eb;
   color: #333;
   transition: background-color 0.5s ease;
-  * {transition: background-color 0.5s ease;}
+  .dark-mode-toggle > button {
+    transition: color 0.5s ease;
+    &:last-child {
+    }
+    .MuiSvgIcon-root {
+      transition: color 0.5s ease;
+    }
+  }
   .dropdown-item {
     color: black;
     &:hover {
@@ -10,11 +17,13 @@ body.light-mode {
     }
   }
   .project-body {
+    background-color: #e6e6e6;
     box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
     -moz-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
     -webkit-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
     -o-box-shadow: 0 4px 4px 4px rgba(45, 45, 45, .3);
     border-radius: 25px;
+    transition: background-color 0.5s ease;
     a {
     }
     &:hover {
@@ -28,15 +37,23 @@ body.light-mode {
     .image-background {
       background-color: #c7e2f2;
     }
+    .project-body-text {
+
+    }
   }
   .navbar {
     box-shadow: 0 1px 1px 1px rgba(45, 45, 45, .2);
     -moz-box-shadow: 0 1px 1px 1px rgba(45, 45, 45, .2);
     -webkit-box-shadow: 0 1px 1px 1px rgba(45, 45, 45, .2);
     -o-box-shadow: 0 1px 1px 1px rgba(45, 45, 45, .2);
+    transition: background-color 0.5s ease;
   }
   .bottom-nav {
     background-color: #e8e6e1;
+    transition: background-color 0.5s ease;
+    .btn-light {
+      transition: border 0.5s ease, background-color 0.5s ease;
+    }
   }
   .name a {
     color: black;
@@ -55,14 +72,18 @@ body.light-mode {
         transition: box-shadow 0.1s;
     }
   }
+  ::selection {
+    background: #46bfe8;
+    transition: background 5s ease;
+  }
 }
 
 body.dark-mode {
   background-color: #242925;
   color: #dfdfdf;
   transition: background-color 0.5s ease;
-  * {transition: background-color 0.5s ease;}
   .dropdown-item {
+    transition: color 0.5s ease;
     color: white;
     &:hover {
       background-color: #242d3b;
@@ -75,6 +96,7 @@ body.dark-mode {
     -webkit-box-shadow: 0 4px 4px 4px rgba(90, 90, 90, .3);
     -o-box-shadow: 0 4px 4px 4px rgba(90, 90, 90, .3);
     border-radius: 25px;
+    transition: background-color 0.5s ease;
     .caption {
     }
     a {
@@ -115,11 +137,21 @@ body.dark-mode {
   .bottom-nav {
     background-color: #17302e;
     transition: background-color 0.5s ease;
+    .btn-dark {
+      transition: border 0.5s ease, background-color 0.5s ease;
+    }
   }
   .dark-mode-toggle > button {
     color: #999;
     &:last-child {
       color: lightblue;
     }
+    .MuiSvgIcon-root {
+      transition: color 10s ease;
+    }
+  }
+  ::selection {
+    background: #ab0505;
+    transition: background 5s ease;
   }
 }

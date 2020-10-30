@@ -1,6 +1,7 @@
 import React from 'react';
 import Blog1 from './components/Blog1';
-import Pychess from './components/Pychess';
+import Pychess from './components/proj/Pychess';
+import UnityFPS from './components/proj/UnityFPS';
 import DarkModeToggle from './components/DarkModeToggle';
 import Main from './Main';
 import {
@@ -23,6 +24,7 @@ export default function App() {
         <Switch>
           <Route path="/blog" exact component={Blog1} />
           <Route path="/pychess" exact component={Pychess} />
+          <Route path="/unityfps" exact component={UnityFPS} />
           <Route path="/" exact component={Main} />
         </Switch>
       </Router>
