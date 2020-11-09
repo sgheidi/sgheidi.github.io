@@ -1,9 +1,10 @@
 import React from 'react';
-import Blog1 from './components/Blog1';
+import Blog from './components/Blog';
 import Pychess from './components/proj/Pychess';
 import UnityFPS from './components/proj/UnityFPS';
+import ChessProgramming from './components/blogs/ChessProgramming';
 import DarkModeToggle from './components/DarkModeToggle';
-import Main from './Main';
+import Main from './components/Main';
 import {
   HashRouter as Router,
   Switch,
@@ -22,9 +23,10 @@ export default function App() {
           <DarkModeToggle />
         </div>
         <Switch>
-          <Route path="/blog" exact component={Blog1} />
+          <Route path="/blog" exact component={Blog} />
           <Route path="/pychess" exact component={Pychess} />
           <Route path="/unityfps" exact component={UnityFPS} />
+          <Route path="/ChessProgramming" exact component={ChessProgramming} />
           <Route path="/" exact component={Main} />
         </Switch>
       </Router>

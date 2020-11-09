@@ -1,4 +1,27 @@
 @media only screen and (min-width: 992px) {
+  .card-body {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 400px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding-top: 18px;
+    .card-header1 {
+      font-size: 21px;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .btn-light {
+      font-size: 14px;
+      width: 180px;
+      margin-top: 15px;
+    }
+    .btn-dark {
+      font-size: 14px;
+      width: 180px;
+      margin-top: 15px;
+    }
+  }
   .name {
     font-size: 25px;
     margin-left: 8px;
@@ -17,7 +40,7 @@
     height: 70px;
     display: flex;
     background-color: #75736e;
-    position: absolute;
+    position: sticky;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -77,14 +100,15 @@
   }
   .back {
     position: absolute;
-    margin-top: 10vw;
-    min-width: 1px;
-    margin-left: 5vw;
+    margin-top: 120px;
+    margin-left: 5.5vw;
+    margin-right: auto;
     .MuiSvgIcon-root {
-      width: 5.5vw;
-      height: 3.5vw;
-      padding-right: 3vw;
+      width: 30px;
     }
+  }
+  .back-blog {
+    display: none;
   }
   .project-body {
     width: 70vw;
@@ -93,7 +117,7 @@
     padding-top: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     * {
       line-height: 1.5;
       font-family: "Times New Roman", Times, serif;
@@ -116,7 +140,7 @@
     .caption {
       text-align: center;
       margin-right: 2vw;
-      margin-top: 15px;
+      margin-top: 10px;
       font-size: 14px;
     }
 
@@ -137,6 +161,21 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+    .pseudocode {
+      width: 50vw;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .inner-header {
+      font-size: 28px;
+      margin-top: 18px;
+    }
+    .code {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 15px;
     }
   }
 }

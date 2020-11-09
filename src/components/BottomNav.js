@@ -11,20 +11,22 @@ export default function BottomNav() {
   return (
     <div className="bottom-nav">
       <Button href={Resume} variant={darkMode.value ? "dark" : "light"}>
-      CV 💼
+      CV&nbsp; 💼
       </Button> <div className="bottom-nav-divider"/>
       <Dropdown>
         <Dropdown.Toggle variant={darkMode.value ? "dark" : "light"}>
-          Projects 📝
+          Projects&nbsp; 📝
         </Dropdown.Toggle>
         <Dropdown.Menu className={darkMode.value ? "dropdown-dark" : "dropdown-light"}>
           <Dropdown.Item as={Link} to="/pychess"
           className="dropdown-item">PyChess</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown> <div className="bottom-nav-divider"/>
-      <Button variant={darkMode.value ? "dark" : "light"}>
-        Blog 💻
-      </Button>
+      <Link to="/blog">
+        <Button variant={darkMode.value ? "dark" : "light"}>
+          Blogs&nbsp; 💻
+        </Button>
+      </Link>
     </div>
   );
 }
