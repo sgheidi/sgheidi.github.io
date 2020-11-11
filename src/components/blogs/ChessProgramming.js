@@ -21,7 +21,7 @@ export default function ChessProgramming() {
           <p className="date"> Nov. 6, 2020 &nbsp; • &nbsp; 4 min read
           </p>
           <p className="project-body-text">
-Chess programming has single-handedly resulted in my skills in algorithm design, flow and
+Chess programming has single-handedly resulted in my skills in algorithm design, program flow and
 implementation to be signficantly stronger. It has not only forced me to think analytically about
 something that seems relatively straight-forward, it made me use important concepts
 such as OOP, inheritance, scoping and namespaces (i.e in C++) and other good coding practices.

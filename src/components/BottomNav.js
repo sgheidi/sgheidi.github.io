@@ -20,6 +20,8 @@ export default function BottomNav() {
         <Dropdown.Menu className={darkMode.value ? "dropdown-dark" : "dropdown-light"}>
           <Dropdown.Item as={Link} to="/pychess"
           className="dropdown-item">PyChess</Dropdown.Item>
+          <Dropdown.Item as={Link} to="/tetrisfriends"
+          className="dropdown-item">TetrisFriends</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown> <div className="bottom-nav-divider"/>
       <Link to="/blog">

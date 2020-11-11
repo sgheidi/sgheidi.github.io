@@ -59,6 +59,21 @@ many design decisions such as the program's flow of logic, which functions to en
 classes and keeping the code as least bug-prone as possible. I designed the codebase so that it
 is as organized and encapsulated as it can be, and made the program flow of logic as simple as
 possible, for the long term.
+
+<p className="inner-header"> The AI </p>
+The AI uses
+minimax and
+alpha-beta pruning
+to search the game tree at a certain depth <div className="code"> d </div> and
+come up with a move of highest value. When searching the moves,
+the AI uses an evauation function to assign a score to the position, what it seeks to maximize.
+For example, the most basic evaluation function would be to give, if it were White, 1 point for
+every pawn which is alive,
+
+More advanced..
+
+
+
           </p>
       </div>
     </>

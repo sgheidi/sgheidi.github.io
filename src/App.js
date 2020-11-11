@@ -2,6 +2,7 @@ import React from 'react';
 import Blog from './components/Blog';
 import Pychess from './components/proj/Pychess';
 import UnityFPS from './components/proj/UnityFPS';
+import TetrisFriends from './components/proj/TetrisFriends';
 import ChessProgramming from './components/blogs/ChessProgramming';
 import DarkModeToggle from './components/DarkModeToggle';
 import Main from './components/Main';
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/pychess" exact component={Pychess} />
           <Route path="/unityfps" exact component={UnityFPS} />
           <Route path="/ChessProgramming" exact component={ChessProgramming} />
+          <Route path="/TetrisFriends" exact component={TetrisFriends} />
           <Route path="/" exact component={Main} />
         </Switch>
       </Router>
