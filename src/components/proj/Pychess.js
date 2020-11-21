@@ -4,7 +4,8 @@ import DarkModeToggle from '../DarkModeToggle';
 import useDarkMode from 'use-dark-mode';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import Typography from '@material-ui/core/Typography';
-import gif from '../../media/out.gif'
+import gif from '../../media/out.gif';
+import gif2 from '../../media/game2.gif';
 import '../../css/projects.scss';
 
 export default function Pychess() {
@@ -17,7 +18,7 @@ export default function Pychess() {
       </div>
       <div className="project-body">
         <p className="project-header"> ♚ PyChess </p>
-          <p className="date"> Oct. 18, 2020 &nbsp; • &nbsp; 3 min read
+          <p className="date"> March 18, 2020 &nbsp; • &nbsp; 3 min read
             <p className="github-tag"> <a href="https://www.github.com/sgheidi/pychess">
             View on GitHub </a> </p>
           </p>
@@ -58,22 +59,14 @@ relatively large system from the ground up. When building something like this, o
 many design decisions such as the program's flow of logic, which functions to encapsulate into
 classes and keeping the code as least bug-prone as possible. I designed the codebase so that it
 is as organized and encapsulated as it can be, and made the program flow of logic as simple as
-possible, for the long term.
+possible, for the long term. <br /><br />
 
-<p className="inner-header"> The AI </p>
-The AI uses
-minimax and
-alpha-beta pruning
-to search the game tree at a certain depth <div className="code"> d </div> and
-come up with a move of highest value. When searching the moves,
-the AI uses an evauation function to assign a score to the position, what it seeks to maximize.
-For example, the most basic evaluation function would be to give, if it were White, 1 point for
-every pawn which is alive,
-
-More advanced..
-
-
-
+<div className="image-background">
+<img
+src={gif2}
+alt="Chess AI playing against itself"
+/> </div>
+<p className="caption"><i>  Round 2: Black checkmates White. </i></p>
           </p>
       </div>
     </>

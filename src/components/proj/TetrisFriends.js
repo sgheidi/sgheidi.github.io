@@ -17,7 +17,7 @@ export default function TetrisFriends() {
       </div>
       <div className="project-body">
         <p className="project-header"> 🕹️&nbsp;Tetris Friends </p>
-          <p className="date"> Nov. 10, 2020 &nbsp; • &nbsp; 4 min read
+          <p className="date"> Feb. 10, 2020 &nbsp; • &nbsp; 4 min read
             <p className="github-tag"> <a href="https://www.github.com/sgheidi/tetrisfriends">
             View on GitHub </a> </p>
           </p>

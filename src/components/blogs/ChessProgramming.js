@@ -24,12 +24,12 @@ export default function ChessProgramming() {
 Chess programming has single-handedly resulted in my skills in algorithm design, program flow and
 implementation to be signficantly stronger. It has not only forced me to think analytically about
 something that seems relatively straight-forward, it made me use important concepts
-such as OOP, inheritance, scoping and namespaces (i.e in C++) and other good coding practices.
-The most fun part of chess programming is building your own chess AI that does exactly what you
-code it to do (this is done using
+such as stacks, queues, trees, recursion, maps, threads, OOP, inheritance, scoping and
+namespaces (i.e in C++) and other good coding practices. The most fun part of chess programming is
+building your own chess AI that does exactly what you code it to do (this is done using
 <a href="https://en.wikipedia.org/wiki/Evaluation_function"> evaluation functions</a>).
 The process of building a large system from scratch can at first seem daunting,
-but once you really get into it, it actually becomes quite fun, especially strengthening
+but once you really get into it, it can become quite fun, especially strengthening
 the AI. <br /><br/>
 
 <div className="image-background">

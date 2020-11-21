@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import gif from '../../media/out.gif'
 import '../../css/projects.scss';
 
-export default function Pychess() {
+export default function AI_MAB() {
   return (
     <>
       <div className="back">
@@ -16,15 +16,11 @@ export default function Pychess() {
         </Link>
       </div>
       <div className="project-body">
-        <p className="project-header"> ♛ FastChess </p>
-          <p className="date"> Nov. xx, 2020 &nbsp; • &nbsp; 3 min read
-            <p className="github-tag"> <a href="https://www.github.com/sgheidi/pychess">
-            View on GitHub </a> </p>
+        <p className="project-header"> AI Algorithms: Minimax and α-β Pruning </p>
+          <p className="date"> Nov. 15, 2020 &nbsp; • &nbsp; 5 min read
           </p>
           <p className="project-body-text">
-FastChess is my second, upgraded version of developing a chess GUI with AI, where I attempt to build
-a stronger AI with better evaluations, so it can make better moves. I also used this project as a way
-to improve my C++ skills and to write cleaner, more elegant code.
+Minimax and α-β pruning is at the heart of how computer chess engines generate moves. When playing 
 
           </p>
       </div>
