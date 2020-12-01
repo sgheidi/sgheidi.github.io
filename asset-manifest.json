@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b806afb4.chunk.css",
-    "main.js": "/static/js/main.8656afe5.chunk.js",
-    "main.js.map": "/static/js/main.8656afe5.chunk.js.map",
+    "main.css": "/static/css/main.f5377700.chunk.css",
+    "main.js": "/static/js/main.a346c709.chunk.js",
+    "main.js.map": "/static/js/main.a346c709.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9a5e2046.js",
     "runtime-main.js.map": "/static/js/runtime-main.9a5e2046.js.map",
     "static/js/2.520db22c.chunk.js": "/static/js/2.520db22c.chunk.js",
     "static/js/2.520db22c.chunk.js.map": "/static/js/2.520db22c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.262e92e440bc6d2d1cb4d06a7cd2f42f.js": "/precache-manifest.262e92e440bc6d2d1cb4d06a7cd2f42f.js",
+    "precache-manifest.05a935d299807c6f5a34d625422830bc.js": "/precache-manifest.05a935d299807c6f5a34d625422830bc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b806afb4.chunk.css.map": "/static/css/main.b806afb4.chunk.css.map",
+    "static/css/main.f5377700.chunk.css.map": "/static/css/main.f5377700.chunk.css.map",
     "static/js/2.520db22c.chunk.js.LICENSE.txt": "/static/js/2.520db22c.chunk.js.LICENSE.txt",
     "static/media/ChessProgramming.jpg": "/static/media/ChessProgramming.ea951710.jpg",
     "static/media/game2.gif": "/static/media/game2.727b9a79.gif",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.9a5e2046.js",
     "static/js/2.520db22c.chunk.js",
-    "static/css/main.b806afb4.chunk.css",
-    "static/js/main.8656afe5.chunk.js"
+    "static/css/main.f5377700.chunk.css",
+    "static/js/main.a346c709.chunk.js"
   ]
 }
