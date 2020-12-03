@@ -9,17 +9,18 @@ import useDarkMode from 'use-dark-mode';
 import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
-export default function Card1() {
+export default function Card2() {
   const darkMode = useDarkMode(false);
 
   return (
     <>
     <div className="card-body">
-    <div className="card-header1">Chess Programming: A Reflection</div>
-    <p className="card-date1"> July 14, 2020 &nbsp; • &nbsp; 4 min read </p>
-    Chess programming has single-handedly resulted in my skills in algorithm design, program flow and
-    implementation to be signficantly stronger. It has not only forced me to think analytically about...
-    <Link to="/chessprogramming"> <br/>
+    <div className="card-header1">AI Algorithms: Minimax and α-β Pruning</div>
+    <p className="card-date1"> Nov. 27, 2020 &nbsp; • &nbsp; 5 min read </p>
+    Minimax, combined with the concept of α-β pruning, is at the heart of how an AI generates a
+    move in perfect, 2 player games such as connect-4, tic-tac-toe and chess. The core idea is very
+    intuitive, and...
+    <Link to="/ai"> <br/>
       <Button variant={darkMode.value ? "dark" : "light"}>
         Continue reading
       </Button>

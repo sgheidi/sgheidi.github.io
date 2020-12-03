@@ -18,7 +18,7 @@ export default function ChessProgramming() {
       </div>
       <div className="project-body">
         <p className="project-header"> ♟️ Chess Programming: A Reflection </p>
-          <p className="date"> Nov. 6, 2020 &nbsp; • &nbsp; 4 min read
+          <p className="date"> Jul. 14, 2020 &nbsp; • &nbsp; 4 min read
           </p>
           <p className="project-body-text">
 Chess programming has single-handedly resulted in my skills in algorithm design, program flow and
@@ -76,7 +76,7 @@ the pinner's (the bishop in this case) movelist spanning from the pinner's posit
 king's position.<br/><br/>
 
 I am sure there are better and more efficient ways for this implementation (as with everything),
-but my approach works well in all situations I've tested. The actual implementation of the above
+but my approach works well in all situations I've tested. The actual C++ implementation of the above
 can be found
 <a href="https://github.com/sgheidi/FastChess/blob/master/src/core/black/bishop.cc#L33"> here</a>.
 

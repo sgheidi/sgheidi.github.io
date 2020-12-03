@@ -1,13 +1,17 @@
 @media only screen and (min-width: 992px) {
+  .card-date1 {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
   .card-body {
     margin-top: 30px;
-    margin-left: 30px;
-    width: 400px;
-    font-size: 15px;
+    width: 40vw;
+    font-size: 14px;
     border-radius: 15px;
     padding-top: 18px;
     .card-header1 {
-      font-size: 21px;
+      font-size: 19px;
       margin-bottom: 10px;
       font-weight: 500;
     }
@@ -104,11 +108,17 @@
     margin-left: 5.5vw;
     margin-right: auto;
     .MuiSvgIcon-root {
-      width: 30px;
+      width: 23px;
     }
   }
   .back-blog {
-    display: none;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 2.1vw;
+    margin-right: auto;
+    .MuiSvgIcon-root {
+      width: 22px;
+    }
   }
   .project-body {
     width: 70vw;
@@ -145,7 +155,7 @@
     }
 
     .project-body-text {
-      text-indent: 20px;
+      text-indent: 25px;
       font-size: 16.5px;
     }
     .image-background {

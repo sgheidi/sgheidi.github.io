@@ -1,8 +1,18 @@
+.card-divider {
+  width: 8vw;
+  display: inline-block;
+}
+
+.cards {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .card-body {
   border-radius: 15px;
   text-decoration: none;
   height: auto;
-  border-radius: 15px;
+  display: inline-block;
   .btn-light {
     color: black;
     background-color: #e8e6e1;
@@ -11,7 +21,7 @@
     transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
   }
   .btn-dark {
-    color: red;
+    color: #ff3d3d;
     background-color: #0f2845;
     border-radius: 25px;
     box-shadow: 0 2px 2px 2px rgba(90, 90, 90, .3);
@@ -91,9 +101,4 @@
 
 .bottom-nav-divider {
   margin: 2vw;
-}
-
-.blog-body-cards {
-  padding: 3vw 3vw;
-  display: flex;
 }

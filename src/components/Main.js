@@ -1,6 +1,7 @@
 import React from 'react';
 import DarkModeToggle from './DarkModeToggle';
 import Card1 from './Card1';
+import Card2 from './Card2';
 import BottomNav from './BottomNav';
 import Test from './Test';
 import useDarkMode from 'use-dark-mode';
@@ -17,7 +18,11 @@ export default function Main()  {
   return (
     <>
       <BottomNav />
-      <Card1 />
+      <div className="cards">
+        <Card2 />
+        <div className="card-divider"/>
+        <Card1 />
+      </div>
     </>
   );
 }

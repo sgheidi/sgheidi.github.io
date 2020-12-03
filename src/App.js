@@ -4,7 +4,7 @@ import Pychess from './components/proj/Pychess';
 import UnityFPS from './components/proj/UnityFPS';
 import TetrisFriends from './components/proj/TetrisFriends';
 import ChessProgramming from './components/blogs/ChessProgramming';
-import AI_MAB from './components/blogs/AI_MAB';
+import AI from './components/blogs/AI';
 import DarkModeToggle from './components/DarkModeToggle';
 import Main from './components/Main';
 import {
@@ -30,7 +30,7 @@ export default function App() {
           <Route path="/unityfps" exact component={UnityFPS} />
           <Route path="/ChessProgramming" exact component={ChessProgramming} />
           <Route path="/TetrisFriends" exact component={TetrisFriends} />
-          <Route path="/AI_MAB" exact component={AI_MAB} />
+          <Route path="/AI" exact component={AI} />
           <Route path="/" exact component={Main} />
         </Switch>
       </Router>
