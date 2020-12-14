@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.429d435a.chunk.css",
-    "main.js": "/static/js/main.a4186b6b.chunk.js",
-    "main.js.map": "/static/js/main.a4186b6b.chunk.js.map",
+    "main.css": "/static/css/main.8adee3f8.chunk.css",
+    "main.js": "/static/js/main.dc01573b.chunk.js",
+    "main.js.map": "/static/js/main.dc01573b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9a5e2046.js",
     "runtime-main.js.map": "/static/js/runtime-main.9a5e2046.js.map",
-    "static/js/2.530a785c.chunk.js": "/static/js/2.530a785c.chunk.js",
-    "static/js/2.530a785c.chunk.js.map": "/static/js/2.530a785c.chunk.js.map",
+    "static/js/2.6d7e586c.chunk.js": "/static/js/2.6d7e586c.chunk.js",
+    "static/js/2.6d7e586c.chunk.js.map": "/static/js/2.6d7e586c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0060b3e8e4c4df58e4ae9b6f651852f3.js": "/precache-manifest.0060b3e8e4c4df58e4ae9b6f651852f3.js",
+    "precache-manifest.980e0b47e47fa63699e3c59a9a0b52cf.js": "/precache-manifest.980e0b47e47fa63699e3c59a9a0b52cf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.429d435a.chunk.css.map": "/static/css/main.429d435a.chunk.css.map",
-    "static/js/2.530a785c.chunk.js.LICENSE.txt": "/static/js/2.530a785c.chunk.js.LICENSE.txt",
+    "static/css/main.8adee3f8.chunk.css.map": "/static/css/main.8adee3f8.chunk.css.map",
+    "static/js/2.6d7e586c.chunk.js.LICENSE.txt": "/static/js/2.6d7e586c.chunk.js.LICENSE.txt",
     "static/media/ChessProgramming.jpg": "/static/media/ChessProgramming.ea951710.jpg",
     "static/media/dfs.png": "/static/media/dfs.dcabc842.png",
     "static/media/game2.gif": "/static/media/game2.727b9a79.gif",
@@ -19,13 +19,15 @@
     "static/media/nn.png": "/static/media/nn.b9bfa27d.png",
     "static/media/out.gif": "/static/media/out.a8a49421.gif",
     "static/media/pin.png": "/static/media/pin.68f67dd5.png",
+    "static/media/plt.png": "/static/media/plt.41641ba3.png",
     "static/media/resume.pdf": "/static/media/resume.c93e21fd.pdf",
+    "static/media/sieve.gif": "/static/media/sieve.6420e348.gif",
     "static/media/tetris.gif": "/static/media/tetris.1c460e76.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.9a5e2046.js",
-    "static/js/2.530a785c.chunk.js",
-    "static/css/main.429d435a.chunk.css",
-    "static/js/main.a4186b6b.chunk.js"
+    "static/js/2.6d7e586c.chunk.js",
+    "static/css/main.8adee3f8.chunk.css",
+    "static/js/main.dc01573b.chunk.js"
   ]
 }
