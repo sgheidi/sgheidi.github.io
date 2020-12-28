@@ -81,8 +81,9 @@ can be found
 <a href="https://github.com/sgheidi/FastChess/blob/master/src/core/black/bishop.cc#L33"> here</a>.
 
 <p className="inner-header"> Notable challenges </p>
-By far the most challenging problem in chess programming has been debugging the AI. The AI, even at
-a mere depth of 2, can search thousands of positions for a single move, and if something goes wrong
+By far the most challenging problem in chess programming for me has been debugging the AI.
+The AI, even at
+a mere depth of 3, can search thousands of positions for a single move and if something goes wrong
 in the search, be it a bug with enpassant or some weird corner case I've forgetten about, I would have
 to search the logs (i.e the positions it has searched for) and see where the bug occured. This can
 be a very tedious process. <br/> <br/>

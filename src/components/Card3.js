@@ -9,18 +9,19 @@ import useDarkMode from 'use-dark-mode';
 import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
-export default function Card2() {
+export default function Card3() {
   const darkMode = useDarkMode(false);
 
   return (
     <>
     <div className="card-body">
-    <div className="card-header1">AI Algorithms: Minimax and α-β Pruning</div>
-    <p className="card-date1"> Nov. 27, 2020 &nbsp; • &nbsp; 7 min read </p>
-    Minimax, combined with the concept of α-β pruning, is at the heart of how an AI generates a
-    move in perfect, 2 player games such as connect-4, tic-tac-toe and chess. The core idea is very
-    intuitive, and...
-    <Link to="/ai"> <br/>
+    <div className="card-header1">An Efficient Algorithm For Counting Primes Up To N + Analysis</div>
+    <p className="card-date1"> Dec. 12, 2020 &nbsp; • &nbsp; 3 min read </p>
+    Here's the problem statement: determine the number of prime numbers from 1 up
+    to an input N.
+    As we are considering efficiency here, we will be using the test case
+    of N = 10000000 (10M) to test...
+    <Link to="/countPrimes"> <br/>
       <Button variant={darkMode.value ? "dark" : "light"}>
         Continue reading
       </Button>

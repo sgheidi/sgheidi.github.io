@@ -22,9 +22,18 @@ export default function Pychess() {
             View on GitHub </a> </p>
           </p>
           <p className="project-body-text">
-FastChess is my second, upgraded version of developing a chess GUI with AI, where I attempt to build
-a stronger AI with better evaluations, so it can make better moves. I also used this project as a way
-to improve my C++ skills and to write cleaner, more elegant code.
+FastChess is my second attempt at building a chess client with an AI which you can play with.
+I used this project not only to build a stronger, more competent AI but also to level up my C++ skills.
+Here I wrote less redundent comments (i.e on functions/classes where it is clear from the
+name), encapsulated the classes further into (i) namespaces and wrote the code so that it is more
+clean and modular.
+
+Most modern chess engines also...
+Enough details, here is a demo of the AI!
+
+img
+The AI here again uses a tree searching algorithm (minimx + AB pruning) to search for the best
+evaluated move.
 
           </p>
       </div>

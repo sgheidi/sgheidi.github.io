@@ -1,10 +1,11 @@
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1312px) {
   .card-date1 {
     font-size: 12px;
     margin-bottom: 15px;
   }
 
   .card-body {
+    display: inline-block;
     margin-top: 30px;
     width: 40vw;
     font-size: 14px;
@@ -35,7 +36,6 @@
     position: sticky;
     width: 100%;
     display: flex;
-    background-color: #73aad1;
     height: 80px;
     margin: 0;
     padding: 0;
@@ -114,7 +114,7 @@
   .back-blog {
     position: absolute;
     margin-top: 120px;
-    margin-left: 2.1vw;
+    margin-left: 1.9vw;
     margin-right: auto;
     .MuiSvgIcon-root {
       width: 22px;
@@ -138,9 +138,11 @@
     .project-header {
       font-size: 31px;
       font-weight:lighter;
+      margin-bottom: 10px;
     }
     .date {
       font-size: 13.5px;
+      margin-bottom: 15px;
     }
     .github-tag {
       font-size: 13.5px;
@@ -149,7 +151,7 @@
     }
     .caption {
       text-align: center;
-      margin-right: 2vw;
+      margin-right: 2.5vw;
       margin-top: 10px;
       font-size: 14px;
     }
@@ -159,18 +161,18 @@
       font-size: 16.5px;
     }
     .image-background {
-      background-color: #202045;
       width: 280px;
-      height: auto;
-      margin: 0 auto;
       padding: 10px;
-      position: relative;
+    }
+    #image-background2 {
+      width: 530px;
+      padding: 10px;
     }
     img {
       width: 250px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    }
+    .img2 {
+      width: 500px;
     }
     .pseudocode {
       width: 50vw;
@@ -179,8 +181,9 @@
       font-size: 14px;
     }
     .inner-header {
-      font-size: 28px;
-      margin-top: 15px;
+      font-size: 26px;
+      margin-top: 17px;
+      margin-bottom: 13px;
     }
     .code {
       padding-left: 5px;

@@ -9,7 +9,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 const DarkToolTip = withStyles((theme) => ({
   tooltip: {
-    backgroundColor: "#2e0718",
+    backgroundColor: "#121212",
     color: "white",
     boxShadow: theme.shadows[1],
     fontSize: 13,
@@ -22,7 +22,7 @@ const DarkToolTip = withStyles((theme) => ({
 
 const LightTooltip = withStyles((theme) => ({
   tooltip: {
-    backgroundColor: "white",
+    backgroundColor: "#e3e3e3",
     color: "black",
     boxShadow: theme.shadows[1],
     fontSize: 13,
@@ -35,20 +35,38 @@ const LightTooltip = withStyles((theme) => ({
 
 export default function DarkModeToggle() {
   const darkMode = useDarkMode(false);
-  var Component = darkMode.value ? DarkToolTip : LightTooltip;
-  return (
-    <div className="dark-mode-toggle">
-      <SocialMedia />
-      <Component title="Toggle light theme">
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 992px)'
+  })
+  if (isDesktopOrLaptop) {
+    var Component = darkMode.value ? DarkToolTip : LightTooltip;
+    return (
+      <div className="dark-mode-toggle">
+        <SocialMedia />
+        <Component title="Toggle light theme">
+          <button type="button" onClick={darkMode.disable}>
+            <WbSunnyIcon className="sun"/>
+          </button>
+        </Component>
+        <Component title="Toggle dark theme">
+          <button type="button" onClick={darkMode.enable}>
+            <NightsStayIcon clsasName="moon"/>
+          </button>
+        </Component>
+      </div>
+    );
+  }
+  else {
+    return (
+      <div className="dark-mode-toggle">
+        <SocialMedia />
         <button type="button" onClick={darkMode.disable}>
           <WbSunnyIcon className="sun"/>
         </button>
-      </Component>
-      <Component title="Toggle dark theme">
         <button type="button" onClick={darkMode.enable}>
           <NightsStayIcon clsasName="moon"/>
         </button>
-      </Component>
-    </div>
-  );
+      </div>
+    );
+  }
 }

@@ -26,7 +26,7 @@ export default function BottomNav() {
       </Dropdown> <div className="bottom-nav-divider"/>
       <Link to="/blog">
         <Button variant={darkMode.value ? "dark" : "light"}>
-          Blogs&nbsp; 💻
+          Blog&nbsp; 💻
         </Button>
       </Link>
     </div>

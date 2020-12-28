@@ -2,6 +2,7 @@ import React from 'react';
 import DarkModeToggle from './DarkModeToggle';
 import Card1 from './Card1';
 import Card2 from './Card2';
+import Card3 from './Card3';
 import BottomNav from './BottomNav';
 import Test from './Test';
 import useDarkMode from 'use-dark-mode';
@@ -19,8 +20,10 @@ export default function Main()  {
     <>
       <BottomNav />
       <div className="cards">
-        <Card2 />
+        <Card3 />
         <div className="card-divider"/>
+        <Card2 />
+        <div className="card-divider-bigscreen"/>
         <Card1 />
       </div>
     </>

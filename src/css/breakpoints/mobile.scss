@@ -85,11 +85,12 @@
     .project-header {
       font-size: 5vw;
       font-weight:lighter;
-      margin-bottom: 1vw;
+      margin-bottom: 2vw;
       margin-top: 1vw;
     }
     .date {
       font-size: 2.5vw;
+      margin-bottom: 3vw;
     }
     .github-tag {
       font-size: 2.5vw;
@@ -107,15 +108,18 @@
       font-size: 2.8vw;
     }
     .image-background {
-      background-color: #202045;
       width: 45vw;
-      height: auto;
-      margin: 0 auto;
       padding: 2vw;
-      position: relative;
+    }
+    #image-background2 {
+      width: 54.5vw;
+      padding: 2vw;
     }
     img {
       width: 40vw;
+    }
+    .img2 {
+      width: 50vw;
     }
     .pseudocode {
       width: 62vw;
@@ -124,8 +128,9 @@
       font-size: 2.5vw;
     }
     .inner-header {
-      font-size: 5vw;
-      margin-top: 3vw;
+      font-size: 4.6vw;
+      margin-top: 2.5vw;
+      margin-bottom: 2.5vw;
     }
     .code {
       padding-left: 5px;
@@ -134,7 +139,6 @@
     }
   }
   .navbar {
-    background-color: #73aad1;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -167,7 +171,6 @@
     }
     .btn-light {
       color: black;
-      background-color: #e8e6e1;
       border-radius: 25px;
       box-shadow: 0 3px 5px 2px rgba(90, 90, 90, .3);
       font-size: 2.7vw;
@@ -175,7 +178,6 @@
     }
     .btn-dark {
       color: white;
-      background-color: #17302e;
       border-radius: 25px;
       box-shadow: 0 3px 5px 2px rgba(90, 90, 90, .3);
       font-size: 2.7vw;

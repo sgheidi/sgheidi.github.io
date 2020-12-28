@@ -28,7 +28,7 @@ combined almost every programming paradigm, coding concept, software engineering
 and even some math skills I had learned until now, into one project. After finishing the project,
 I not only felt my programming skills had increased dramatically, I also became more and more
 interested about a topic I knew virtually nothing about: chess as a game itself. I realized that
-the game is quite complicated, and that in terms of skill level, the AI i had programmed was
+the game is quite complicated, and that in terms of skill level, the AI I had programmed was
 nothing compared to contemporary, state-of-the-art engines such as
 <a href="https://stockfishchess.org/"> Stockfish</a> and <a href="https://komodochess.com/">
 Komodo</a>.
@@ -48,7 +48,9 @@ it to, or with any new idea I come up with. I wrote every line in this codebase 
 concept or idea and see the difference immediately. <br /><br />
 
 Some lessons I learned along the way are: good code organization practices, Python PEP-8 style
-docstrings (for classes and functions), and applying OOP in a real project. Before this, I, among
+docstrings (for classes and functions), and applying
+<a href="https://en.wikipedia.org/wiki/Object-oriented_programming#"> OOP </a> in
+a real project. Before this, I, among
 many developers, only heard about OOP in school, theory, and in 'interview' type questions.
 I have rarely used OOP in my code for work or school. However, for a project with a large codebase
 like this, applying OOP concepts <b> signficantly </b> increased code organization which in turn

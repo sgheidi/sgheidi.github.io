@@ -20,7 +20,12 @@ export default function AI_MAB() {
           <p className="date"> Nov. 15, 2020 &nbsp; • &nbsp; 3 min read
           </p>
           <p className="project-body-text">
-
+text here
+text here
+text here
+text here
+text here
+text here
 
           </p>
       </div>

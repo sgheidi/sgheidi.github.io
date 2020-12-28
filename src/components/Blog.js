@@ -4,6 +4,7 @@ import useDarkMode from 'use-dark-mode';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import Card1 from './Card1';
 import Card2 from './Card2';
+import Card3 from './Card3';
 import {Link} from 'react-router-dom';
 
 export default function Blog() {
@@ -15,8 +16,10 @@ export default function Blog() {
       </Link>
     </div>
     <div className="cards">
-      <Card2 />
+      <Card3 />
       <div className="card-divider"/>
+      <Card2 />
+      <div className="card-divider-bigscreen"/>
       <Card1 />
     </div>
     </>

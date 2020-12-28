@@ -4,8 +4,9 @@ import DarkModeToggle from '../DarkModeToggle';
 import useDarkMode from 'use-dark-mode';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import Typography from '@material-ui/core/Typography';
-import img from '../../media/minimax.png'
-import nn from '../../media/nn.png'
+import img from '../../media/minimax.png';
+import nn from '../../media/nn.png';
+import dfs from '../../media/dfs.png'
 import '../../css/projects.scss';
 
 export default function AI() {
@@ -18,7 +19,7 @@ export default function AI() {
       </div>
       <div className="project-body">
         <p className="project-header"> 🤖&nbsp;AI Algorithms: Minimax and α-β Pruning </p>
-          <p className="date"> Nov. 27, 2020 &nbsp; • &nbsp; 5 min read
+          <p className="date"> Nov. 27, 2020 &nbsp; • &nbsp; 7 min read
           </p>
           <p className="project-body-text">
 Minimax, combined with the concept of α-β pruning, is at the heart of how an AI generates a
@@ -31,8 +32,9 @@ That is, in human terms, see if a good position comes out of it. In computer ter
 as an <a href="https://en.wikipedia.org/wiki/Evaluation_function"> evaluation function</a>,
 which all modern chess engines employ. The computer evaluates how good
 the position is via its evaluation function, undoes
-that move, and moves on to the next moves until it has traversed all nodes of the game tree. <br/>
-<br/>
+that move, and moves on to the next moves until it has traversed all nodes of the game tree up to a
+depth <div className="code"> d</div>.
+<br/><br/>
 
 <div className="image-background">
 <img
@@ -71,7 +73,7 @@ Pseudocode for minimax with α-β pruning is shown below: <br/><br/>
   {"float minimax(depth, alpha, beta, player):\n"}
   {"   if depth == 0: \n"}
   {"     return -eval_pos(): \n"}
-  {"   /* the 'minimizing' player. */\n"}
+  {"  /* the 'minimizing' player. */\n"}
   {"  if player == Black:\n"}
   {"    best_move = -9999\n"}
   {"    for i in black_moves:\n"}
@@ -102,32 +104,43 @@ For a complete C++ chess implementation
 see
 <a href="https://github.com/sgheidi/FastChess/blob/master/src/ai/black/search.cc#L4"> here</a>.
 </i></p>
+<div className="image-background">
+<img
+src={dfs}
+alt="Depth-first"
+/> </div>
+<p className="caption"><i> It should also be noted that the tree nodes are visited depth-first
+(i.e traverses the deepest nodes first), as shown
+above.
+</i></p>
 However, this algorithm has flaws and can lead to problems such as the
 <a href="https://en.wikipedia.org/wiki/Horizon_effect"> horizon effect</a>,
 and also situations where the next move 'seems' to be worse, but actually becomes better,
 after more moves. This is a real problem with traditional AI's, which prune subtrees
-that it thinks are bad for it but are actually not. Neural network-based AI's seem to avoid
+that it thinks are bad for it but are actually not (this can be caused by slight inaccuracies in the
+evaluation function). Neural network-based AI's seem to avoid
 these problems, which brings us to the next section. <br/>
 
 <p className="inner-header"> Neural Network Move Generation </p>
-With new advances made to machine learning (specifically, reinforcement learning), neural
+With new advances made to machine learning (specifically, deep reinforcement learning), neural
 network chess has been steadily rising since 2018, when the AI company DeepMind released the
 neural network chess entity known
 as <a href = "https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a>, which reached a skill level
 comparable to Komodo and
 Stockfish in just 4 hours of training and was able to beat Stockfish 8 - the then strongest
-chess engine - in most of their matches.
+chess engine - in most of their matches. This is despite the fact that Stockfish searched more than
+80 million nodes/s (!!) vs. AlphaZero's 80000 nodes/s.
 <a href="https://en.wikipedia.org/wiki/Leela_Chess_Zero"> Leela Chess Zero</a> and
 <a href="https://www.chessprogramming.org/Stockfish_NNUE"> Stockfish NNUE </a>
 (which uses an <a href="https://en.wikipedia.org/wiki/Efficiently_updatable_neural_network">
 efficiently updatable neural network</a>)
 are other
-examples of this. <br/> <br/>
+examples of neural-network based AI's. <br/> <br/>
 
 <div className="image-background">
 <img
 src={nn}
-alt="Minimax"
+alt="Neural network"
 /> </div>
 <p className="caption"><i> A basic neural network. </i></p>
 
@@ -135,20 +148,21 @@ Instead of a conventional alpha-beta search of the game tree, the neural network
 searches the game tree (as humans as and traditional engines do) but instead uses its
 trained neural network to evaluate the board positions it encounters
 in its search. This neural network
-is continuously trained and updated by a method known as <i>self-play</i>, where
+is continuously trained and updated by an unsupervised learning method known as <i>self-play</i>, where
 it plays matches against another version
 of itself, and the stronger one is updated as the new network.
 Doing this causes the search speed and depth to decrease dramatically
 (see <a href = "https://www.chessprogramming.org/Stockfish_NNUE">here</a>)
 but also leads to substantial increases in skill level. The playing style is completely
 transformed from
-one of rigid, calculative and theory-based to a more <i>intuitive</i> and human-like gameplay.
+one of rigid, pure calculative and theory-based to more strategic, positional and 'human-like'.
 An interesting characteristic of neural network chess AI's is that they often sacrifice
-important pieces in bizarre and seemingly random positions, whereas traditional engines seldom do this.
+important pieces in bizarre and seemingly random positions, whereas traditional engines only
+seldom do this.
 <br/> <br/>
 Another popular method for neural network move generation is through a supervised learning pipeline,
 where the AI continuously updates its network by analyzing top engine or grandmaster games
-from a database. The AI’s
+from a large database. The AI’s
 playing style would be similar to the set of games it is trained on.
 <a href="https://chessengines.blogspot.com/2019/11/chess-engine-leelenstein-925.html"> Leelenstein </a>
 is an example of this.

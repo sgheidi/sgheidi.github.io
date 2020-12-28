@@ -9,7 +9,7 @@ import { withStyles, makeStyles } from '@material-ui/core/styles';
 
 const DarkToolTip = withStyles((theme) => ({
   tooltip: {
-    backgroundColor: "#2e0718",
+    backgroundColor: "#121212",
     color: "white",
     boxShadow: theme.shadows[1],
     fontSize: 13,
@@ -22,7 +22,7 @@ const DarkToolTip = withStyles((theme) => ({
 
 const LightTooltip = withStyles((theme) => ({
   tooltip: {
-    backgroundColor: "white",
+    backgroundColor: "#e3e3e3",
     color: "black",
     boxShadow: theme.shadows[1],
     fontSize: 13,
@@ -35,21 +35,40 @@ const LightTooltip = withStyles((theme) => ({
 
 export default function SocialMedia() {
   const darkMode = useDarkMode(false);
-  var Component = darkMode.value ? DarkToolTip : LightTooltip;
-  return (
-    <>
-      <Component title="LinkedIn">
-        <a href="https://www.linkedin.com/in/shervan-gheidi/">
-          <LinkedInIcon color={darkMode.value ? "secondary" : "action"}/>
-        </a>
-      </Component>
-      <Component title="GitHub">
-        <a href="https://www.github.com/sgheidi">
-          <GitHubIcon color={darkMode.value ? "secondary" : "action"}
-          className="git"
-          />
-        </a>
-      </Component>
-    </>
-  );
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 992px)'
+  })
+  if (isDesktopOrLaptop) {
+    var Component = darkMode.value ? DarkToolTip : LightTooltip;
+    return (
+      <>
+        <Component title="LinkedIn">
+          <a href="https://www.linkedin.com/in/shervan-gheidi/">
+            <LinkedInIcon color={darkMode.value ? "secondary" : "action"}/>
+          </a>
+        </Component>
+        <Component title="GitHub">
+          <a href="https://www.github.com/sgheidi">
+            <GitHubIcon color={darkMode.value ? "secondary" : "action"}
+            className="git"
+            />
+          </a>
+        </Component>
+      </>
+    );
+  }
+  else {
+    return (
+      <>
+      <a href="https://www.linkedin.com/in/shervan-gheidi/">
+        <LinkedInIcon color={darkMode.value ? "secondary" : "action"}/>
+      </a>
+      <a href="https://www.github.com/sgheidi">
+        <GitHubIcon color={darkMode.value ? "secondary" : "action"}
+        className="git"
+        />
+      </a>
+      </>
+    );
+  }
 }

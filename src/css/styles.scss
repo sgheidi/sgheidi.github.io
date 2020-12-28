@@ -36,7 +36,7 @@
 
 .navbar {
   position: sticky;
-  background-color: #73aad1;
+  background-color: #84ab98;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -56,11 +56,25 @@
   display: flex;
   .dropdown-dark {
     border-radius:25px;
-    background-color: #2b3545;
+    background-color: #242d3b;
   }
   .dropdown-light {
     border-radius:25px;
-    background-color: #e3e1ed;
+    background-color: #dbd9d9;
+  }
+  .btn-light {
+    background-color: #dbd9d9;
+    border-color: #e0e0e0;
+    color: black;
+    border-radius: 25px;
+    box-shadow: 0 3px 5px 2px rgba(90, 90, 90, .3);
+  }
+  .btn-dark {
+    background-color: #131a12;
+    border-color: #17302e;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 3px 5px 2px rgba(90, 90, 90, .3);
   }
 }
 
@@ -86,7 +100,7 @@
     border: none;
     color: #ffe600;
     cursor: pointer;
-    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
     &:last-child {
       color: #666;
     }

@@ -4,6 +4,8 @@ import Pychess from './components/proj/Pychess';
 import UnityFPS from './components/proj/UnityFPS';
 import TetrisFriends from './components/proj/TetrisFriends';
 import ChessProgramming from './components/blogs/ChessProgramming';
+import primes from './components/blogs/primes';
+import lc from './components/blogs/lc';
 import AI from './components/blogs/AI';
 import DarkModeToggle from './components/DarkModeToggle';
 import Main from './components/Main';
@@ -32,6 +34,8 @@ export default function App() {
           <Route path="/TetrisFriends" exact component={TetrisFriends} />
           <Route path="/AI" exact component={AI} />
           <Route path="/" exact component={Main} />
+          <Route path="/countPrimes" exact component={primes} />
+          <Route path="/lc" exact component={lc} />
         </Switch>
       </Router>
     </>
