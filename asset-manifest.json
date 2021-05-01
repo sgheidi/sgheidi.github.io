@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3343b6b.chunk.css",
+    "main.js": "/static/js/main.e3e45bf6.chunk.js",
+    "main.js.map": "/static/js/main.e3e45bf6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9a5e2046.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9a5e2046.js.map",
+    "static/js/2.d78a9e47.chunk.js": "/static/js/2.d78a9e47.chunk.js",
+    "static/js/2.d78a9e47.chunk.js.map": "/static/js/2.d78a9e47.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f29dda488a4aeb9480c2585bb7b119c4.js": "/precache-manifest.f29dda488a4aeb9480c2585bb7b119c4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e3343b6b.chunk.css.map": "/static/css/main.e3343b6b.chunk.css.map",
+    "static/js/2.d78a9e47.chunk.js.LICENSE.txt": "/static/js/2.d78a9e47.chunk.js.LICENSE.txt",
+    "static/media/ChessProgramming.jpg": "/static/media/ChessProgramming.ea951710.jpg",
+    "static/media/dfs.png": "/static/media/dfs.dcabc842.png",
+    "static/media/game2.gif": "/static/media/game2.727b9a79.gif",
+    "static/media/minimax.png": "/static/media/minimax.3d559e27.png",
+    "static/media/nn.png": "/static/media/nn.b9bfa27d.png",
+    "static/media/out.gif": "/static/media/out.a8a49421.gif",
+    "static/media/pin.png": "/static/media/pin.68f67dd5.png",
+    "static/media/plt.png": "/static/media/plt.41641ba3.png",
+    "static/media/resume_web.pdf": "/static/media/resume_web.c7e1d058.pdf",
+    "static/media/sieve.gif": "/static/media/sieve.6420e348.gif",
+    "static/media/tetris.gif": "/static/media/tetris.1c460e76.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a5e2046.js",
+    "static/js/2.d78a9e47.chunk.js",
+    "static/css/main.e3343b6b.chunk.css",
+    "static/js/main.e3e45bf6.chunk.js"
+  ]
+}
